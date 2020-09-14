@@ -10,6 +10,9 @@ public class Fatura {
     private int Quantidade;
     private double Preco;
 
+    public Fatura(){
+    }
+
     public Fatura(String codigo, String descricao, int quantidade, double preco){
         Codigo = codigo;
         Descricao = descricao;

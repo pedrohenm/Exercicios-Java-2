@@ -15,26 +15,30 @@ public class PontoMovel implements Movel{
     }
 
     public String toString(){
-        return "PontoMovel[x=" + this.X + ", y=" + this.Y + ", velX=" + this.VelX + ", velY=" + this.VelY;
+        return "PontoMovel[x=" + this.X + ", y=" + this.Y + ", velX=" + this.VelX + ", velY=" + this.VelY + "]";
     }
 
     @Override
     public void moverParaCima() {
         this.Y++;
+        System.out.println("Movendo para cima");
     }
 
     @Override
     public void moverParaBaixo() {
         this.Y--;
+        System.out.println("Movendo para baixo");
     }
 
     @Override
     public void moverParaEsquerda() {
         this.X--;
+        System.out.println("Movendo para esquerda");
     }
 
     @Override
     public void moverParaDireita() {
         this.X++;
+        System.out.println("Movendo para direita");
     }
 }

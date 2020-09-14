@@ -5,8 +5,13 @@ public class CirculoMovel implements Movel{
     private int Raio;
     private PontoMovel Centro;
 
-    public CirculoMovel(int x, int y, int velX, int velY, int raio){
+    public CirculoMovel(PontoMovel centro, int raio){
+        Centro = centro;
         Raio = raio;
+    }
+
+    public String toString(){
+        return "CírculoMovel[raio=" + this.Raio + ", " + Centro.toString();
     }
 
     @Override
@@ -16,16 +21,16 @@ public class CirculoMovel implements Movel{
 
     @Override
     public void moverParaBaixo() {
-
+        Centro.moverParaBaixo();
     }
 
     @Override
     public void moverParaEsquerda() {
-
+        Centro.moverParaEsquerda();
     }
 
     @Override
     public void moverParaDireita() {
-
+        Centro.moverParaDireita();
     }
 }
